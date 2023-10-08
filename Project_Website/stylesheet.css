@@ -20,7 +20,8 @@ h1,h2,h3{
 }
 
 h1{
-    font-size: 44px;
+    font-size: 7vw;
+    font-weight: 900;
 }
 
 h3{
@@ -40,6 +41,10 @@ a:hover{
 #profielfoto{
     float: right;
 }
+#profielfoto-contact{
+    float: right;
+}
+
 .container{          
     margin-top: 150px;
 }
@@ -111,3 +116,71 @@ a:hover{
     margin-top: 20px;
     padding-top: 20px;
 }
+
+/*Contactformulier*/
+form{
+    float:left;
+    width: 45%;
+}
+
+input, label, textarea{
+    display: block;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #FFF3DE;
+    border-left: 1px solid #510D0A;
+    border-bottom: 1px solid #510D0A;
+    border-top: none;
+    border-right: none;
+}
+
+#verzendknop{
+    font-family: 'Montserrat', sans-serif ;
+    margin: 10px;
+    padding: 3px;
+    background-color: #510D0A;
+    color:#FFF3DE;
+}
+#verzendknop:hover{
+    background-color: #BB4E0F;
+    font-weight: bold;
+    border: 2px solid #510D0A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#verzendknop:active{
+    background-color: #BB4E0F;
+}
+
+/*Social media*/
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:50px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #BB4E0F;
+    color: white;
+  }
