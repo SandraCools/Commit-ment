@@ -1,0 +1,78 @@
+:root{
+    --lichtgroen: #527145;
+    --donkergroen: #183A37;
+    --lichte-achtergrond: #FFF3DE;
+    --oranje: #BB4E0F;
+    --donker-oranje: #510D0A;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color: var(--lichtgroen);
+    background-color: var(--lichte-achtergrond);
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:10%;
+}
+h1,h2,h3{
+  color: var(--lichtgroen);
+  font-family: 'Josefin Slab', serif; 
+}
+
+a{
+    color: var(--oranje);
+}
+a:visited{
+    color:var(--donker-oranje);
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#profielfoto{
+    float: right;
+}
+.container{          
+    margin-top: 150px;
+}
+.button-homepage{
+    border: 4px solid var(--oranje);
+    background-color: var(--lichte-achtergrond);
+    color:#183A37;
+    padding: 10px;
+    font-size: medium;
+    cursor:pointer;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#header{
+    margin-top: -10px;
+    margin-left: -10%;
+    margin-right: -10%;
+    background-color: #510D0A;
+    padding: 70px 10px;
+    align-items: center;
+    text-align: center;
+}
+#header ul{
+    list-style-type: none;
+}
+li{
+    float:left;
+}
+li a {
+    display: block;
+    color: var(--lichte-achtergrond);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+li a:visited{
+    color:var(--lichte-achtergrond)
+}
+li a.active{
+    text-decoration: underline;
+    color: var(--donker-oranje);
+    background-color: var(--lichte-achtergrond);
+}

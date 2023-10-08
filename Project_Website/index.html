@@ -7,68 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-        :root{
-            --lichtgroen: #527145;
-            --donkergroen: #183A37;
-            --lichte-achtergrond: #FFF3DE;
-            --oranje: #BB4E0F;
-            --donker-oranje: #510D0A;
-        }
-        body{
-            font-family: 'Montserrat', sans-serif;
-            font-size: medium;
-            color: var(--lichtgroen);
-            background-color: var(--lichte-achtergrond);
-            margin-left:10%;
-            margin-right:10%;
-            margin-bottom:10%;
-        }
-        h1,h2,h3{
-          color: var(--donkergroen);
-          font-family: 'Josefin Slab', serif; 
-        }
-
-        a{
-            color: var(--oranje);
-        }
-        a:visited{
-            color:var(--donker-oranje);
-        }
-        a:hover{
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        #profielfoto{
-            float: right;
-        }
-        .container{          
-            margin-top: 150px;
-        }
-        .button-homepage{
-            border: 4px solid var(--oranje);
-            background-color: var(--lichte-achtergrond);
-            color:#183A37;
-            padding: 10px;
-            font-size: medium;
-            cursor:pointer;
-            margin-left:20px;
-            margin-right:20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <div id="header"> /*Hoe krijg ik deze header gecentreerd?*/
+        <ul > 
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="ervaring.html">Ervaring</a></li>
+            <li><a href="ik_ben.html">Hobby's en interesses</a></li>
+            <li><a href="ik_wil.html">Visie en motivatie</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html" style="border: 1px solid var(--lichte-achtergrond);">Contacteer me</a></li>
+        </ul>
+    </div>
     <div class="container">
         <img src="Bestanden/home transparent.png" width="50%" alt="Foto waar ik in mijn tuin omhoog kijk" id="profielfoto">
         <h1 class="text-home" style="margin-right: 30%; margin-top:20px;font-size: 7vw;font-weight: bold">Hallo,<br>mijn naam is<br>Sandra Cools</h1>
         <p>Wie mij kent, weet dat ik honderd en één interesses heb. Van wetenschap tot theologie, van informatica tot muziek,… Ik wil het allemaal kunnen begrijpen, zodat ik er iets mee kan doen om andere te helpen. De rode draad door alles? Oplossingen zoeken en anderen laten delen in mijn passies.</p>
     </div>
     <div style="margin-top:100px;">
-        <button type="button" class="button-homepage"><a href="ik wil.html">Interesses en visie</a></button>
-        <button type="button" class="button-homepage"><a href="ik ben.html">Hobby's en vrije tijd</a></button>
-        <button type="button" class="button-homepage"><a href="ik ben.html">Mijn studies</a></button>
+        <button type="button" class="button-homepage"><a href="ervaring.html">Ervaring</a></button>
+        <button type="button" class="button-homepage"><a href="ik_ben.html">Hobby's en interesses</a></button>
+        <button type="button" class="button-homepage"><a href="ik_wil.html">Visie en motivatie</a></button>
     </div>
-</div>
 </body>
 </html>
