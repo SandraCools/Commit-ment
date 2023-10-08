@@ -7,8 +7,8 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: medium;
-    color: var(--lichtgroen);
+    font-size: 16px;
+    color: var(--donkergroen);
     background-color: var(--lichte-achtergrond);
     margin-left:10%;
     margin-right:10%;
@@ -17,6 +17,14 @@ body{
 h1,h2,h3{
   color: var(--lichtgroen);
   font-family: 'Josefin Slab', serif; 
+}
+
+h1{
+    font-size: 44px;
+}
+
+h3{
+    font-size: 24px;
 }
 
 a{
@@ -58,21 +66,48 @@ a:hover{
 #header ul{
     list-style-type: none;
 }
-li{
+#header li{
     float:left;
 }
-li a {
+#header li a {
     display: block;
     color: var(--lichte-achtergrond);
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
 }
-li a:visited{
+#header li a:visited{
     color:var(--lichte-achtergrond)
 }
-li a.active{
+#header li a.active{
     text-decoration: underline;
     color: var(--donker-oranje);
     background-color: var(--lichte-achtergrond);
+}
+
+.short-list{
+    list-style-type: square;
+} 
+
+.foto-hobby-rechts{
+    float: right;
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-left: 20px;
+    clear:both;
+}
+.foto-hobby-links{
+        float: left;
+    width: 40%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-right: 20px;
+    clear: both;
+}
+
+.text-hobby{
+    min-height: 400px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
