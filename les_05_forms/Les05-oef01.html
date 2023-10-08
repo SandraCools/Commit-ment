@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .invulveld{
+            background-color: lightblue;
+        }
+
+        .invulveld:focus{
+            background-color: white;
+        }
+        form{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="https://tm-statweb.be/sendmail.php">
+        <div>
+            <label for="eerstelabel">Eerste label</label>
+            <input type="text" class="invulveld" id="eerstelabel" placeholder="bijvoorbeeld" name="eerstelabel" />
+        </div>
+        <div>
+            <label for="tweedelabel">Tweede label</label>
+            <input type="text" class="invulveld" id="tweedelabel" placeholder="bijvoorbeeld" name="tweedelabel"/>
+        </div>
+        <div>
+            <label for="verzenden">
+                <input type="hidden" name="studentemail" value="r0259412@student.thomasmore.be">
+                <input type="submit" id="verzenden" value="VERZENDEN" />
+            </label>
+        </div>
+    </form>
+</body>
+</html>
