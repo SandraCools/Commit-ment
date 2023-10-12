@@ -9,45 +9,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="Bestanden/favicon.ico">
 </head>
 <body>
-    <a href="index.html">Home</a>
+    <header>
+        <ul > 
+            <li><img src="Bestanden/Sandra.png" id="logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ervaring.html">Ervaring</a></li>
+            <li><a href="hobby.html">Hobby's en interesses</a></li>
+            <li><a href="ik_wil.html">Visie en motivatie</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a class="active" href="contact.html" style="position:absolute;right:13%">Contacteer me</a></li>
+        </ul>
+    </header>
     
     <div class="container">
         <img src="Bestanden/contact transparent.png" width="50%" alt="Profielfoto" id="profielfoto-contact">
         <h1 class="text-home" style="margin-left:20%; margin-right: 30%; margin-bottom:50px;">Let's<br>get<br>in touch</h1>
-        <form method="post" action="https://tm-statweb.be/sendmail.php">
-            <div>
-                <label for="emailadres">E-mailadres:</label>
-                <input type="email" id="emailadres" name="emailadres">
+        <div id="formulier-contact">
+            <form method="post" action="https://tm-statweb.be/sendmail.php">
+                <div>
+                    <label for="emailadres">E-mailadres:</label>
+                    <input type="email" id="emailadres" name="emailadres">
+                </div>
+                <div>
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam">
+                </div>
+                <div>
+                    <label for="subject">Onderwerp:
+                    <input type="text" id="subject" name="onderwerp">
+                    </label>
+                </div>
+                <div>
+                    <label for="bericht">Bericht:
+                    <textarea id="bericht" name="bericht" rows="8"></textarea>
+                    </label>
+                </div>
+                    <input type="hidden" name="studentemail" value="r0259412@student.thomasmore.be">
+                <div>
+                    <input type="submit" value="Versturen" id="verzendknop">
+                </div>
+            </form>
+            <div style="text-align:right; margin-top:50px;">
+                <a href="https://www.facebook.com/sandra.cools.93" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/sandra-cools" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/sandra_cools/" class="fa fa-instagram"></a>
             </div>
-            <div>
-                <label for="naam">Naam:</label>
-                <input type="text" id="naam" name="naam">
-            </div>
-            <div>
-                <label for="subject">Onderwerp:
-                <input type="text" id="subject" name="onderwerp">
-                </label>
-            </div>
-            <div>
-                <label for="bericht">Bericht:
-                <textarea id="bericht" name="bericht" rows="8"></textarea>
-                </label>
-            </div>
-                <input type="hidden" name="studentemail" value="r0259412@student.thomasmore.be">
-            <div>
-                <input type="submit" value="Versturen" id="verzendknop">
-            </div>
-        </form>
+        </div>
+        
     </div>
     <!---Iconen social media
     Hoe komt het dat deze tussen de foto en het formulier springen als het scherm breder wordt? En hoe kan dit vermeden worden?-->
-    <div style="text-align:right; margin-top:50px;">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-
-    </div>
+    
 </body>
 </html>
