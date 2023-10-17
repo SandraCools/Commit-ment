@@ -9,6 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Slab:wght@600&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="Bestanden/favicon.ico">
+    <style>
+        #foto-cv{
+            margin:20%;
+            width:60%;
+        }
+
+        #cv-main{
+            width: 65%;
+        }
+
+        #cv-main-inner{
+            width: 30%;
+        }
+
+        .empty-first-col{
+            width:5%;
+        }
+
+        #tabel-skills{
+            margin-top:3em;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,20 +42,21 @@
             <li><a href="ik_wil.html">Visie en motivatie</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a class="active" href="cv.html">CV</a></li>
-            <li><a href="contact.html" style="border: 1px solid var(--lichte-achtergrond);position:absolute;right:13%">Contacteer me</a></li>
+            <li><a href="contact.html" id="contact-button">Contacteer me</a></li>
         </ul>
     </header>
     
     <div class="row">
         <div class="column zijbalk-cv">
-            <div><img src="Bestanden/CV_profielfoto.jpg" alt="Profielfoto van mezelf in een rozentuin" style="margin:20%" width="60%" ></div>
-            <p><span style="font-weight: bold;">ADRES</span><br>Kleinhoefstraat 4<br>2440 Geel</p>
-            <p><span style="font-weight: bold;">E-MAIL</span><br>r0259412<br>@student.thomasmore.be</p>
-            <p><span style="font-weight: bold;">GSM</span><br>0479 64 31 81</p>
-            <p><span style="font-weight: bold;">GEBOORTEDATUM</span><br>12 september 1993</p>
-            <p><span style="font-weight: bold;">NATIONALIITEIT</span><br>Belg</p>
-            <p><span style="font-weight: bold;">RIJBEWIJS</span><br>B</p>
-            <p style="font-weight: bold;margin-top:4em">DIPLOMA'S</p>
+            <div><img src="Bestanden/CV_profielfoto.jpg" alt="Profielfoto van mezelf in een rozentuin" id="foto-cv"></div>
+            <p><span class="cv-sidebar-bold">ADRES</span><br>Kleinhoefstraat 4<br>2440 Geel</p>
+            <p><span class="cv-sidebar-bold">E-MAIL</span><br>r0259412<br>@student.thomasmore.be</p>
+            <p><span class="cv-sidebar-bold">GSM</span><br>0479 64 31 81</p>
+            <p><span class="cv-sidebar-bold">GEBOORTEDATUM</span><br>12 september 1993</p>
+            <p><span class="cv-sidebar-bold">NATIONALIITEIT</span><br>Belg</p>
+            <p><span class="cv-sidebar-bold">RIJBEWIJS</span><br>B</p>
+            <p></p>
+            <p class="cv-sidebar-bold">DIPLOMA'S</p>
             <p>Graduaat Programmeren<br>Thomas More<br>nog niet afgerond</p>
             <p>Bachelor Musicologie<br>KU Leuven<br>2016</p>
             <p>Specifieke lerarenopleiding<br>KU Leuven<br>2015</p>
@@ -44,10 +67,10 @@
             <div id="knop-cv"><a class="download-CV" href="Bestanden/CV.pdf" download="Sandra_Cools_CV">Download CV</a></div>
             
         </div>
-        <div class="column" style="width: 65%;">
+        <div class="column" id="cv-main">
             <div class="row">
-                <div class="column" style="width: 30%;"><h1>Sandra<br><span style="font-weight:bold">COOLS</span></h1></div>
-                <div class="column" id="citaat" style="width: 30%;">Wat ik doe, wil ik goed doen. Vooral wanneer het te maken heeft met wat ik zinvol vind: andere mensen iets bĳleren en oplossingen bedenken voor problemen.</div>
+                <div class="column" id="cv-main-inner"><h1>Sandra<br><strong>COOLS</strong></h1></div>
+                <div class="column" id="citaat">Wat ik doe, wil ik goed doen. Vooral wanneer het te maken heeft met wat ik zinvol vind: andere mensen iets bĳleren en oplossingen bedenken voor problemen.</div>
             </div>
             
         </div>
@@ -55,13 +78,13 @@
     <!--Tabel met werkervaring-->
             <table> 
                 <tr class="werkervaring-top-row">
-                    <td colspan="3"><h2 style="font-weight: bold;">Werkervaring</h2></td>
+                    <td colspan="3"><h2><strong>Werkervaring</strong></h2></td>
                 </tr>
                 <tr>
-                    <td colspan="3"><p style="font-weight: bold;">Pastoraal werkster</p></td>
+                    <td colspan="3"><p><strong>Pastoraal werkster</strong></p></td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2016 - nu</td>
                     <td>Pastorale eenheid De Heilige Apostelen Balen-Mol</td>
                 </tr>
@@ -70,10 +93,10 @@
                     <td colspan="2">Evenementen organiseren, projecten ontwikkelen en begeleiden, persoonlĳke trajectbegeleiding van volwassenen en kinderen, uitwerken en begeleiden van een internationaal catecheseproject, digitale ondersteuning van de werking van de PE, webbeheer, digitale tools ontwikkelen en implementeren, ...</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><p style="font-weight: bold;">Onafhankelĳk bestuurder OZCS Koepel (vrĳwillig)</p></td>
+                    <td colspan="3"><p><strong>Onafhankelĳk bestuurder OZCS Koepel (vrĳwillig)</strong></p></td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2020 - nu</td>
                     <td>Onderwĳsinrichtingen Zusters der Christelĳke Scholen van Vorselaar</td>
                 </tr>
@@ -82,25 +105,25 @@
                     <td colspan="2">Vertegenwoordiger van de spiritualiteit van de zusters in de raad van bestuur, vergaderen, beleid maken, visie over onderwĳs analyseren en uitdragen, ...</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><p style="font-weight: bold;">Leerkracht rooms-katholieke godsdienst (3e graad secundair)</p></td>
+                    <td colspan="3"><p><strong>Leerkracht rooms-katholieke godsdienst (3e graad secundair)</strong></p></td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2019 - 2023</td>
                     <td>Campos Turnhout</td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2017 - 2018</td>
                     <td>SJB College Mol</td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2016 - 2017</td>
                     <td>Rozenberg S.O. Mol</td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2014 - 2015</td>
                     <td>Stage SLO: Rozenberg S.O. Mol en Sint-Angela Tildonk</td>
                 </tr>
@@ -109,10 +132,10 @@
                     <td colspan="2">Lessen voorbereiden, doceren, activerende werkvormen bedenken en toepassen, evalueren, planning maken, samenwerken in team, projecten uitwerken en begeleiden, gesprekken modereren, ...</td>
                 </tr>
                 <tr>
-                    <td colspan="3"><p style="font-weight: bold;">Onderzoeksmedewerker</p></td>
+                    <td colspan="3"><p><strong>Onderzoeksmedewerker</strong></p></td>
                 </tr>
                 <tr>
-                    <td style="width:5%"></td>
+                    <td class="empty-first-col"></td>
                     <td>2012 - 2015</td>
                     <td>KU Leuven, faculteit Theologie en Religiewetenschappen</td>
                 </tr>
@@ -122,11 +145,11 @@
                 </tr>
             <!--tabel met skills-->
             </table> 
-            <table style="margin-top:3em">
+            <table id="tabel-skills">
                 <tr>
-                    <th style="width:33%; text-align: left;font-weight: bold;"><h2>Talen</h2></th>
-                    <th style="width:33%; text-align: left;font-weight: bold;"><h2>IT-kennis</h2></th>
-                    <th style="width:33%; text-align: left;font-weight: bold;"><h2>Competenties</h2></th>
+                    <th class="skill-col"><h2>Talen</h2></th>
+                    <th class="skill-col"><h2>IT-kennis</h2></th>
+                    <th class="skill-col"><h2>Competenties</h2></th>
                 </tr>
                 <tr>
                     <td>Nederlands<div class="voortgangsbalk-rand">
@@ -183,8 +206,8 @@
                 </td>
                 </tr>
                 <tr> <!--Hoe kan ik de vetgedrukte tekst op dezelfde hoogte krijgen? Tekst bovenaan de cel uitlijnen?-->
-                    <td><span style="font-weight:bold;">Noties</span><br>Duits, Spaans</td>
-                    <td><span style="font-weight:bold;">Andere</span><br>MS Office, Affinity, Google Workspace, OBS, Audacity, ...</td>
+                    <td><strong>Noties</strong><br>Duits, Spaans</td>
+                    <td><strong>Andere</strong><br>MS Office, Affinity, Google Workspace, OBS, Audacity, ...</td>
                     <td></td>
                 </tr>
             </table>
