@@ -80,3 +80,37 @@ footer{
     bottom: 0px;
     width: 80%;
 }
+
+.zijbalk{
+    background-color: #510D0A;
+}
+
+.links-uitgelijnd{
+    text-align: left;
+}
+
+.rechts-uitgelijnd{
+    text-align: right;
+}
+
+.citaat{
+    font-family: 'Allura', Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+/*Voortgangsbalkjes CV*/
+.voortgangsbalk-rand{
+    width: 80%;
+    border: 1px solid #183A37;
+    border-radius: 5px;
+    margin:0.5em 0 1em 0;
+}
+.voortgang{
+    height: 10px;
+    background-color: #527145;
+}
+.skill-col{
+    width:33%;
+    text-align: left;
+    font-weight: bold;
+}
