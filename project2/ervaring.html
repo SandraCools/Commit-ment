@@ -8,16 +8,70 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
-<div class="container">
+<div class="container ruimte-100-na">
     <h1>Wie ben ik op professioneel vlak?</h1>
 </div>
 
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/IkBen_pastor.jpg" id="pastor">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/IkBen_leerkracht.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/IkBen_webdesigner.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
+  <div class="container ruimte-100-voor ruimte-100-na">
+    <h3>Pastor</h3>
+        <p>In 2010 koos ik ervoor om theologie te gaan studeren aan de KU Leuven om te kunnen begrijpen wat niemand kan begrijpen: het geloof. Ik leerde er abstract denken, inzicht in sociale en psychologische processen en waar de mens in zijn kern naar op zoek is. In 2016 werd ik parochie-assistent in Balen en Mol. Naast verantwoordelijke voor verschillende catecheseprojecten ben ik er de beheerder van de website en beheer ik de digitale inschrijvingen voor het doopsel, de eerste communie en de jongerenwerking. Op de foto hiernaast zie je me staan op de preekstoel in Herentals, waar ik mocht vertellen over wat het voor mij betekent om een christen te zijn. 
+        </p>
+        <br>
+    <h3>Leerkracht</h3>
+        <p>Na mijn studies theologie volgde ik de specifieke lerarenopleiding. Sinds 2016 combineer ik een job als godsdienstleerkracht met een job in de pastoraal. Lesgeven geeft me energie, vooral wanneer ik merk dat ik de wereld van jongeren kan vergroten en hen iets kan meegeven waardoor ze meer mens worden. In 2019 schreef ik mee aan de nieuwe godsdienstmethode ‘Curieus’ bij uitgeverij Van In. Dat was voor mij een manier om mijn theologische kennis en manier van lesgeven te delen met vele andere leerkrachten.
+        </p>
+        <br>
+    <h3>Webdesigner</h3>
+        <p>In de lagere school maakte ik mijn eerste website op MSN Groups samen met een vriendin. In het middelbaar goot ik een boekbespreking in een website en aan de KU Leuven mocht ik de persoonlijke website van één van mijn professoren ontwerpen. In de studentenvereniging 'Katechetika' werd ik binnen het praesidium verkozen tot informaticaverantwoordelijke, wat betekende dat ik de website en de mailserver moest onderhouden en updaten. Van code kende ik nog niets, maar met eenvoudige sitebouwers zoals o.a. Wordpress geraakte ik best al ver. Op dezelfde manier maakte ik in mijn vrije tijd ook een nieuwe website voor de pastorale eenheid in Mol en Balen, waar ik als pastor werk sinds 2016.<br>
+        In 2021 maakte ik van mijn hobby mijn bijberoep en richtte ik SanCo Webdesign op. Gezien mijn beperkte kennis in het coderen richt ik me voorlopig in de eerste plaats op verenigingen die geen groot budget hebben voor een website. Ook zij verdienen een mooi identiteitskaartje op het internet.</p>
+        <p>Je kan <a href="portfolio.html">hier</a> enkele voorbeelden zien van websites die ik ontworpen heb.</p>
+  </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "3",
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 </html>

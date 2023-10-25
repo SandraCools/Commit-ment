@@ -114,3 +114,53 @@ footer{
     text-align: left;
     font-weight: bold;
 }
+
+.ruimte-100-voor{
+    margin-top: 100px;
+}
+
+.ruimte-100-na{
+    margin-bottom: 100px;
+}
+
+/*Image slider*/
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+.swiper-slide img {
+    display: block;
+    height: 350px;
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+  }
+.swiper-slide #pastor{
+    object-position: right;
+}
+
+/*Werkt dit?*/
+@media screen and (max--width:600px) {
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 200px;
+      }
+    .swiper-slide img {
+        display: block;
+        height: 200px;
+        width: 100%;
+        object-fit:cover;
+        object-position: top;
+      }
+}
