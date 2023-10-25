@@ -134,7 +134,12 @@ footer{
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 350px;
+  }
+
+.slides-cv{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
   }
 
 .swiper-slide img {
@@ -144,6 +149,12 @@ footer{
     object-fit:cover;
     object-position: top;
   }
+
+  .swiper-slide.skill img{
+    height: 100px;
+    width: 100px;
+}
+
 .swiper-slide #pastor{
     object-position: right;
 }

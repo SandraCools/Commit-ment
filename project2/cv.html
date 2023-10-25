@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Slab:wght@600&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
 <!--HEADER-->
@@ -169,22 +172,7 @@
                     <!--Skills-->
                     <div class="container-sm">
                         <div class="row">
-                            <div class="col-md-4">
-                                <h2>Talen</h2>
-                                Nederlands
-                                <div class="voortgangsbalk-rand">
-                                    <div class="voortgang" style="width:100%"></div>
-                                </div>
-                                Engels<div class="voortgangsbalk-rand">
-                                    <div class="voortgang" style="width:90%"></div>
-                                </div>
-                                Frans<div class="voortgangsbalk-rand">
-                                    <div class="voortgang" style="width:50%"></div>
-                                </div>
-                                <strong>Noties</strong><br>Duits, Spaans
-                                <p></p>
-                            </div>
-                            <div class="col-md-4">
+                            <div id="IT-kennis" class="col-md-4">
                                 <h2>IT-kennis</h2>
                                 SQL
                                 <div class="voortgangsbalk-rand">
@@ -205,7 +193,7 @@
                                 <strong>Andere</strong><br>MS Office, Affinity, Google Workspace, OBS, Audacity, ...
                                 <p></p>
                             </div>
-                            <div class="col-md-4">
+                            <div id="competenties" class="col-md-4">
                                 <h2>Competenties</h2>
                                 Spreken voor groepen
                                 <div class="voortgangsbalk-rand">
@@ -222,8 +210,87 @@
                                 </div>                        
                                 <p></p>
                             </div>
+                            <div id="talen" class="col-md-4">
+                                <h2>Talen</h2>
+                                Nederlands
+                                <div class="voortgangsbalk-rand">
+                                    <div class="voortgang" style="width:100%"></div>
+                                </div>
+                                Engels<div class="voortgangsbalk-rand">
+                                    <div class="voortgang" style="width:90%"></div>
+                                </div>
+                                Frans<div class="voortgangsbalk-rand">
+                                    <div class="voortgang" style="width:50%"></div>
+                                </div>
+                                <strong>Noties</strong><br>Duits, Spaans
+                                <p></p>
+                            </div>
                         </div>         
-                    </div> 
+                    </div>
+                                <!-- Swiper -->
+                                <div class="swiper mySwiper slides-cv">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Html 5.png" title="HTML">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/CSS3.png" title="CSS">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Bootstrap.png" title="Bootstrap">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/C++.png" title ="C#">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Visual Studio Code 2019.png" title="Visual Studio Code">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Visual Studio.png" title="Visual Studio">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Microsoft SQL Server.png" title="SQL">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/GitHub.png" title="GitHub">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Affinity Designer.png" title="Affinity Designer">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Affinity Photo.png" title="Affinity Photo">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Affinity Publisher.png" title="Affinity Publisher">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Google Drive.png" title="Google Workspace">
+                                        </div>
+                                         <div class="swiper-slide skill">
+                                            <img src="images/skills/Office 365.png" title="Office 365">
+                                        </div>
+                                       <div class="swiper-slide skill">
+                                            <img src="images/skills/Microsoft Excel.png" title="MS Excel">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Microsoft Outlook.png" title="MS Outlook">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Microsoft Word.png" title="MS Word">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Microsoft PowerPoint.png" title="MS PowerPoint">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/OBS Studio.png" title="OBS Studio">
+                                        </div>
+                                        <div class="swiper-slide skill">
+                                            <img src="images/skills/Audacity.png" title="Audacity">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>                                
+ 
                 </div>
             </div>
   </div>
@@ -231,5 +298,29 @@
 <!--FOOTER-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          autoplay:{
+            delay: 1500,
+            pauseOnMouseEnter: true,
+          },
+          slidesPerView: 5,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+  
 </body>
 </html>
