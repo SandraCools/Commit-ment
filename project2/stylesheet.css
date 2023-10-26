@@ -46,9 +46,25 @@ a:hover{
     font-weight: bold;
 }
 
+.btn-primary{
+    background-color: #510D0A;
+    border: none;
+    color:#FFF3DE;
+}
+.btn-primary a,
+.btn-primary a:visited,
+a.btn-primary{
+    color:#FFF3DE !important;
+}
+.btn-primary:hover{
+    background-color: #BB4E0F;
+}
+
 /*Navigatiebalk*/
 .navbar{
     background-color: #510D0A !important;
+    margin: 0px -12px 100px -12px !important;
+    padding: 30px;
   }
 a.nav-link{
     color:#FFF3DE;
@@ -57,6 +73,9 @@ a.nav-link{
 {
     padding-left: 10px;
     padding-right: 10px;
+}
+.nav-item{
+    padding:0 1vw 0 1vw;
 }
 
 .nav-item .nav-link.active,
@@ -75,10 +94,9 @@ a.nav-link{
 
 /* FOOTER */
 footer{
-    background-color: #FFF3DE !important;
-    position: fixed !important;
-    bottom: 0px;
-    width: 80%;
+    margin: 50px -12px 0px -12px;
+    padding-right: 3em;
+
 }
 
 .zijbalk{
@@ -174,4 +192,34 @@ footer{
         object-fit:cover;
         object-position: top;
       }
+}
+
+.visie-kaarten .card{
+    border: none;
+    background-color: transparent;
+}
+
+.visie-kaarten .card-header{
+    background-color:#FFF3DE !important;
+}
+
+#banner-ik-wil{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.foto-hobby{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card-homepage{
+    min-height: 450px !important;
+}
+.card img{
+    height: 200px;
+    object-fit: cover;
 }
