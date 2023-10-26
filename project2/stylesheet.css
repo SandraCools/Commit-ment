@@ -51,11 +51,19 @@ a:hover{
     border: none;
     color:#FFF3DE;
 }
+.btn-readmore{
+    background-color: #FFF3DE;
+}
+
 .btn-primary a,
 .btn-primary a:visited,
 a.btn-primary{
-    color:#FFF3DE !important;
+    color:#FFF3DE;
 }
+a.btn-readmore{
+    color:#183A37;
+}
+
 .btn-primary:hover{
     background-color: #BB4E0F;
 }
@@ -220,6 +228,18 @@ footer{
     min-height: 450px !important;
 }
 .card img{
-    height: 200px;
+    height: 15rem;
     object-fit: cover;
+}
+
+.card a{
+    background-color:#183A37;
+    color:#FFF3DE;
+}
+.card-text{
+    font-size: 0.9em;
+}
+
+.card-portfolio{
+    width: 20em;
 }
