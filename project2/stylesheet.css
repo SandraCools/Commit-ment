@@ -243,3 +243,13 @@ footer{
 .card-portfolio{
     width: 20em;
 }
+
+.hobby-carousel{
+    height: 80vh;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.carousel-caption{
+    background-color: #183a37ae;
+}
