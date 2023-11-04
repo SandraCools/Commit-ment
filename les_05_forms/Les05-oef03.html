@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 5 oef 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        fieldset{
+            font-size: 24px;
+            text-align: left;
+            background-color: burlywood;
+            margin-bottom: 10px;;
+        }
+        legend{
+            background-color: maroon;
+            color: white;
+            padding: 0.5em;
+        }
+
+        fieldset, input[type=submit] {
+            width: 25%;
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        fieldset label{
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        input[type=submit]{
+            background-color: burlywood;
+            border: 2px outset lightgray;
+            font-size: 24px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="https://tm-statweb.be/forms.php">
+        <fieldset>
+            <legend>Geslacht</legend>
+            <label for="man">Man
+            <input type="radio" id="man" name="geslacht" value="man"></label>
+            <label for="vrouw">Vrouw
+            <input type="radio" id="vrouw" name="geslacht" value="vrouw"></label>
+            <label for="ander">Ander
+            <input type="radio" id="ander" name="geslacht" value="ander"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Kleur ogen</legend>
+            <label for="bruin">Bruin
+            <input type="radio" id="bruin" name="ogen" value="bruin"></label>
+            <label for="groen">Groen
+            <input type="radio" id="groen" name="ogen" value="groen"></label>
+            <label for="blauw">Blauw
+            <input type="radio" id="blauw" name="ogen" value="blauw"></label>
+            <label for="grijs">Grijs
+            <input type="radio" id="grijs" name="ogen" value="grijs"></label>
+
+        </fieldset>
+        <input type="submit" id="registreren" value="Registreren">
+
+    </form>
+</body>
+</html>
