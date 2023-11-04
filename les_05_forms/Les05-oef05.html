@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 5 oef 5</title>
+    <style>
+        body{
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        input[type=text], input[type=submit], fieldset, select{
+            width: 10vw;
+            box-sizing: border-box;
+        }
+        form{
+            width: 20vw;
+            margin: 10px;
+            padding: 5px;
+        }
+        fieldset{
+            margin:0px;
+            box-shadow: 2px 2px grey;
+        }
+
+        input[type=text]:focus{
+            background-color: khaki;
+            border: 3px solid red;
+        }
+
+        select{
+            background-color: lightgray;
+        }
+        select:focus{
+            background-color: white;
+        }
+        div{
+            margin: 5px 0px;
+        }
+
+        input, select{
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form method="get" action="https://tm-statweb.be/forms.php">
+        <div>
+            <label for="first-name">Voornaam:</label>
+        </div>
+        <div>
+            <input type="text" id="first-name" name="Voornaam" placeholder="Voornaam" required>
+        </div>
+        <div>
+            <label for="last-name">Familienaam:</label>
+        </div>
+        <div>
+            <input type="text" id="last-name" name="Familienaam" placeholder="Familienaam" required>
+        </div>
+        <div>
+            <label for="adres">Adres:</label>
+        </div>
+        <div>
+            <input type="text" id="adres" name="Adres" placeholder="Adres" required>
+        </div>
+        <div>
+            <label for="provincie">Provincie:</label>
+        </div>
+        <div>
+            <select name="provincie" id="provincie">
+                <option value="Antwerpen">Antwerpen</option>
+                <option value="Limburg" selected>Limburg</option>
+                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                <option value="West-Vlaanderen">West-Vlaanderen</option>
+                <option value="Henegouwen">Henegouwen</option>
+                <option value="Luik">Luik</option>
+                <option value="Luxemburg">Luxemburg</option>
+                <option value="Namen">Namen</option>
+                <option value="Waals-Brabant">Waals-Brabant</option>
+            </select>        </div>
+        <fieldset>
+            <legend>Geslacht</legend>
+            <label for="man">Man</label>
+            <input type="radio" name="geslacht" id="man" value="Man" required>
+            <label for="vrouw">Vrouw</label>
+            <input type="radio" name="geslacht" id="vrouw" value="vrouw" required>
+            <label for="ander">Ander</label>
+            <input type="radio" name="geslacht" id="ander" value="ander" required>
+        </fieldset>
+        <div>
+            <label for="foto" id="foto-label">Foto</label>
+            <input type="file" id="foto" name="file">
+        </div>
+        <div>
+            <label for="akkoord">Ik ga akkoord met de algemene voorwaarden</label>
+            <input type="checkbox" id="akkoord" required>
+        </div>
+        <div>
+            <input type="submit" value="Registreren">
+        </div>
+
+    </form>
+</body>
+</html>
