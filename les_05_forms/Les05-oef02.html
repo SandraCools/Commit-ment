@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oefening 2</title>
+    <style>
+        body, #registreren{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        input{
+            width: 50vw;
+            border-radius: 15px;
+            min-height: 40px;
+            box-sizing: border-box;
+            box-shadow: 5px 5px lightgray;
+            margin: 8px 0px;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form method="post" action="https://tm-statweb.be/forms.php" class="formulier">
+        <div>
+            <label for="voornaam" class="label-style">Voornaam:</label>
+        </div>
+        <div>
+            <input
+            class="invulveld"
+            type="text"
+            placeholder="Stijn"
+            id="voornaam"
+            >
+        </div>
+        <div>
+            <label for="familienaam" class="label-style">Familienaam:</label>
+        </div>
+        <div>
+            <input
+            class="invulveld"
+            type="text"
+            placeholder="Lenaerts"
+            id="familienaam">
+        </div>
+        <div>
+            <label for="gebruikersnaam" class="label-style">Gebruikersnaam:</label>
+        </div>
+        <div>
+            <input
+            class="invulveld"
+            type="text"
+            placeholder="mail@thomasmore.be"
+            id="gebruikersnaam">
+        </div>
+        <div>
+            <label for="nickname" class="label-style">Nickname:</label>
+        </div>
+        <div>
+            <input
+            class="invulveld"
+            type="text"
+            placeholder=""
+            id="nickname"
+            required>
+        </div>
+        <div>
+            <label for="paswoord" class="label-style">Paswoord:</label>
+        </div>
+        <div>
+            <input
+            class="invulveld"
+            type="password"
+            placeholder=""
+            id="paswoord"
+            required>
+        </div>
+        <div>
+            <label for="herhaal-paswoord" class="label-style">Herhaal paswoord:</label>
+        </div>
+        <div>
+            <input
+            class="invulveld"
+            type="password"
+            placeholder=""
+            id="herhaal-paswoord"
+            required>
+        </div>
+        <div>
+            <input type="submit" id="registreren" value="Registreren">
+        </div>
+    </form>
+</body>
+</html>

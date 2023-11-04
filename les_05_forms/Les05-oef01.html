@@ -6,10 +6,13 @@
     <title>Document</title>
     <style>
         body{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+            font-size: 32px;
         }
         .invulveld{
             background-color: lightblue;
+            margin-bottom: 1em;
+            padding: 01em;
         }
 
         .invulveld:focus{
@@ -18,22 +21,51 @@
         form{
             width: 40%;
         }
+
+        #registreren{
+            font-size: 26px;
+            padding: 0.5em 1em;;
+        }
     </style>
 </head>
 <body>
-    <form method="post" action="https://tm-statweb.be/sendmail.php">
+    <form method="post" action="https://tm-statweb.be/forms.php">
         <div>
-            <label for="eerstelabel">Eerste label</label>
-            <input type="text" class="invulveld" id="eerstelabel" placeholder="bijvoorbeeld" name="eerstelabel" />
+            <label for="eerstelabel">Voornaam:</label>
         </div>
         <div>
-            <label for="tweedelabel">Tweede label</label>
-            <input type="text" class="invulveld" id="tweedelabel" placeholder="bijvoorbeeld" name="tweedelabel"/>
+            <input
+            type="text"
+            class="invulveld"
+            id="eerstelabel"
+            placeholder="Voornaam"
+            name="eerstelabel"
+            />
         </div>
         <div>
-            <label for="verzenden">
-                <input type="hidden" name="studentemail" value="r0259412@student.thomasmore.be">
-                <input type="submit" id="verzenden" value="VERZENDEN" />
+            <label for="tweedelabel">Familienaam:</label>
+        </div>
+        <div>
+            <input
+            type="text"
+            class="invulveld"
+            id="tweedelabel"
+            placeholder="Familienaam"
+            name="tweedelabel"
+            />
+        </div>
+        <div>
+            <label for="registreren">
+                <input
+                type="hidden"
+                name="studentemail"
+                value="r0259412@student.thomasmore.be"
+                />
+                <input
+                type="submit"
+                id="registreren"
+                value="Registreren"
+                />
             </label>
         </div>
     </form>
