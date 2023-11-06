@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 6 oef 3</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container > .row {
+            font-size: 30px;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            align-content: stretch;
+            height: 33vh;
+
+        }
+        .row >div{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 3vh;
+            margin: 5px;
+        }
+
+        .header1{
+            background-color: aqua;
+        }
+        .header2{
+            background-color:fuchsia;
+        }
+        .header3{
+            background-color:lawngreen;
+        }
+
+        .menu-container{
+            background-color: yellow;
+        }
+
+        .menu1{
+            background-color: cadetblue;
+        }
+
+        .menu2{
+            background-color: forestgreen;
+        }
+
+        .menu3{
+            background-color: mediumvioletred;
+        }
+
+        .body1{
+            background-color: red;
+        }
+        .body2{
+            background-color: purple;
+        }
+
+        .body3{
+            background-color: #96be99;
+        }
+
+        .footer1{
+            background-color: #0e25ba;
+        }
+
+        .footer2{
+            background-color: #b3b330;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="row row-3">
+            <div class="column header1">Header</div>
+            <div class="header2">Header</div>
+            <div class="header3">Header</div>
+        </div>
+        <div class="row row-4"> 
+            <div class="menu-container">
+                <div class="menu1">Menu 1</div>
+                <div class="menu2">Menu 2</div>
+                <div class="menu3">Menu 3</div>
+            </div>
+            <div class="body1">Body</div>
+            <div class="body2">Body</div>
+            <div class="body3">Body</div>
+        </div>
+        <div class="row row-2">   
+            <div class="footer1">Footer</div>
+            <div class="footer2">Footer</div>
+        </div>
+    </div>
+</body>
+</html>
